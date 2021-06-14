@@ -103,6 +103,7 @@ end
 I = ret_pick;
 switch contam_method
 	case 1 % original
+		f_c = mem_input(:,I);
 		m_c = mem_comp(:,I); 
 	case 2 % lightly noise-contaminated
 		O1 = norm(mem_input(:,I))*o1;
