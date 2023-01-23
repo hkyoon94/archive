@@ -1,6 +1,6 @@
 # NRSTDP
 
-Program archive for article 'Neurodynamical Role of STDP in Storage and Retrieval of Associative Information'.
+### Program archive for article 'Neurodynamical Role of STDP in Storage and Retrieval of Associative Information'.
 
 1.  File 'image_group.m' is for the simulation of 'retrieval of grouped images' section in the article.
     Basically performs association of five 32 x 32 pixels of orchestral instrument images used in the article.
