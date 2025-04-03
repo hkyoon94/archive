@@ -1,0 +1,13 @@
+#! 올바른 실행을 위해, VOCAB_TYPE은 반드시 실행 '전'에 미리 지정되어야 함
+
+VOCAB_TYPE: "inst-gen"  # or "vocal-gen", ... etc.
+
+NOTE_COMPLETION:  
+# Note sequence completion order (sequenceword 자체의 순서와는 무관)
+  - "NOTE_POSITION"
+  - "VELOCITY"
+  - "PITCH"
+  - "NOTE_DURATION"
+
+DEFAULT_SOFTMAX_TEMP: 0.95  # float
+DEFAULT_TOP_K: 32  # int

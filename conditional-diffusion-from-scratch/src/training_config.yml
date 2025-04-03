@@ -1,0 +1,23 @@
+UNET:
+  IN_CHANNEL: 3
+  DOWN_BLOCK_OUTS:
+    - 64  # first block's out channel
+    - 128  # second block's out channel ...
+    - 256
+  BOTTOM_BLOCK_OUTS:
+    - 512
+    - 256
+  UP_BLOCK_OUTS:
+    - 256
+    - 128
+    - 64
+  OUT_CHANNEL: 3
+  T_EMBED_DIMENSION: 256
+TRAIN:
+  TOTAL_STEPS: 200
+  BETA_1: 0.0001
+  BETA_T: 0.05
+  BATCH_SIZE: 96
+  INITIAL_LR: 0.001
+  MAX_EPOCH: 200
+  SAVE_INTERVAL: 2
